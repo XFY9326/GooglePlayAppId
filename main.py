@@ -1,7 +1,6 @@
 import asyncio
 import gzip
 import os
-import time
 import urllib.request
 from concurrent.futures import ProcessPoolExecutor
 from urllib.parse import urlparse, parse_qs
@@ -123,6 +122,7 @@ async def main():
     # Dynamic task name
     # task_name = str(int(time.time()))
     task_name = "main"
+
     app_ids_dir = os.path.join(output_dir, f"app_ids_{task_name}")
     app_ids_path = os.path.join(output_dir, f"app_ids_{task_name}.txt")
 
