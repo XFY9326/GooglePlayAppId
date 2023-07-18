@@ -120,7 +120,9 @@ async def main():
         os.makedirs(output_dir)
     sitemaps_path = os.path.join(output_dir, "sitemaps.txt")
 
-    task_name = str(int(time.time()))
+    # Dynamic task name
+    # task_name = str(int(time.time()))
+    task_name = "main"
     app_ids_dir = os.path.join(output_dir, f"app_ids_{task_name}")
     app_ids_path = os.path.join(output_dir, f"app_ids_{task_name}.txt")
 
